@@ -10,6 +10,7 @@ import Type from './Type';
 import Delete from './Delete';
 import Title from './Title';
 import Description from './Description';
+import Comments from './Comments/Comments';
 import Status from './Status';
 import AssigneesReporter from './AssigneesReporter';
 import Priority from './Priority';
@@ -74,6 +75,7 @@ const ProjectBoardIssueDetails = ({
         <Left>
           <Title issue={issue} updateIssue={updateIssue} />
           <Description issue={issue} updateIssue={updateIssue} />
+          <Comments issue={issue} fetchIssue={fetchIssue} />
         </Left>
         <Right>
           <Status issue={issue} updateIssue={updateIssue} />
